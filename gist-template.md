@@ -59,5 +59,10 @@ Character Classes:  Bracket Expression Character Classes:[\da-z\.-], [a-z\.], [\
 
 ### Character Escapes
 
+The backslash `\` is used to escape the characters normal function. Most characters stand for themselves but some are called meta characters. Those meta characters have functions that we need to escape if we want to use them as themselves. In our expression, we use period `"."` or dot between groups two and three `([\da-z\.-]+)\.([a-z\.]{2,6})`. The problem with this is that dot is a meta character that means any character at all. In order to use dot as a literal character instead of its meta meaning, we need to use the backslash to escape that meaning and use it by itself. We also need to escape `\/` the meta function of the forward slash in our expression because forward slash indicates boundaries in regular expressions. 
+```
+Character Escape:  \. and \/.
+```
+
 ## Author
 
