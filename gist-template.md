@@ -1,10 +1,13 @@
-# Title (replace with your title)
+# Regex for Matching a URL
 
-Introductory paragraph (replace this with your text)
+In this tutorial, I will explain how the regular expression, or regex, for matching a URL functions by breaking down each part of the expression and describing what it does. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The regex for matching a URL is `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`. I will discuss the regex components, what they do and how they are used in this regex.  
+```
+Regex for Matching a URL: /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+```
 
 ## Table of Contents
 
@@ -13,11 +16,11 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Grouping Constructs](#grouping-constructs)
 - [Bracket Expressions](#bracket-expressions)
 - [Character Classes](#character-classes)
-- [The OR Operator](#the-or-operator)
-- [Flags](#flags)
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
+
+There are a lot of regular expression components that make a regex work. I will discuss anchors, quantifiers, grouping constructs, bracket expressions, character classes, flags, character escapes and how they function in this regex for matching a URL. 
 
 ### Anchors
 
@@ -29,12 +32,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Character Classes
 
-### The OR Operator
-
-### Flags
-
 ### Character Escapes
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
