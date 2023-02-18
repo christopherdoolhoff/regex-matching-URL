@@ -24,6 +24,11 @@ There are a lot of regular expression components that make a regex work. I will 
 
 ### Anchors
 
+Anchors in regular expressions are tokens that assert something about the string such as teh beginning or the end of the line. In our regex for matching a URL, it uses the character `^` to indicate the beginning of the string. It is telling the engine that the string needs to start with http. Their are some other characters in their too but we will discuss those later. The `$` character tells teh engine that it is at the end of the string. It is telling the engine that this is the end of our URL matching regex. 
+```
+^ beginning, $ ending.
+```
+
 ### Quantifiers
 
 ### Grouping Constructs
