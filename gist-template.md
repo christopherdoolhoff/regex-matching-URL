@@ -38,6 +38,11 @@ Quantifiers are used to tell the engine reading the regex how many instances of 
 
 ### Grouping Constructs
 
+Our regex is grouped together with parentheses, splitting our expression into four groups. The first group is `(https?:\/\/)?` where it is saying this group is optional. The second group is the `([\da-z\.-]+)` indicating that we expect digits, letters, dots, and hyphens. The third group is `([a-z\.]{2,6})` indicating extensions with letters and dots. This third group is where our URLs usually have a ".com" or ",org". The fourth and final group in our regex is `([\/\w \.-]*)*\/?` indicating optional filepaths or directories.
+```
+Group 1: (https?:\/\/). Group 2: ([\da-z\.-]+). Group 3: ([a-z\.]{2,6}). Group 4: ([\/\w \.-]*).
+```
+
 ### Bracket Expressions
 
 ### Character Classes
