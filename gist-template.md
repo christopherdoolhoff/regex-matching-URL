@@ -31,6 +31,11 @@ Anchors in regular expressions are tokens that assert something about the string
 
 ### Quantifiers
 
+Quantifiers are used to tell the engine reading the regex how many instances of a character or group should be present. The `?` is a quantifier that tells the engine a character or group is optional. In our URL matcher, it is saying the "s" in "https" is optional and might just be `http`. The next `?` is telling the engine that `https?:\/\/` is also optional. The final `?` is telling the engine that the last `/` is optional and may or may not be present as well. We just discussed `?`, now we will discuss `*`. Like `?`, the `*` character indicates that something may or may not be present. The difference between them is that `?` indicates the instance may occur once or not at all but `*` indicates that the instance may occur zero or more times. This tells the engine in our case that it can expect letters or numbers in any quantity but they may also not be present. The `+` character indicates an occurrence of an instance one or more times. In our regex, it is saying that we expect to see digits, letters, dots, and hyphens. The last quantifier in our expression is the `{m,n}` quantifier. It indicates the least or minimum number of occurrences and the most times an instance can occur. In our regex, it is saying that letters a to z and a dot should occur between two and six times `{2,6}`.
+```
+? Zero or one. * Zero or more. + One or more. {m,n} Minimum m, maximum n.
+```
+
 ### Grouping Constructs
 
 ### Bracket Expressions
