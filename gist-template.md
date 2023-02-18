@@ -52,6 +52,11 @@ Bracket Expressions:[\da-z\.-], [a-z\.], [\/\w \.-].
 
 ### Character Classes
 
+You can use bracket expressions to indicate a character class. This makes the bracket expression an example of character classes. There are also other character classes that do not need brackets. our regex uses some of these others as well. The `\d` indicates a number between zero and nine, or a digit.\w indicates a lowercase letter, uppercase letter, or digit between zero and nine. 
+```
+Character Classes:  Bracket Expression Character Classes:[\da-z\.-], [a-z\.], [\/\w \.-]. Character Classes without Brackets: \d, \w.
+```
+
 ### Character Escapes
 
 ## Author
