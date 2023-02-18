@@ -45,6 +45,11 @@ Group 1: (https?:\/\/). Group 2: ([\da-z\.-]+). Group 3: ([a-z\.]{2,6}). Group 4
 
 ### Bracket Expressions
 
+Bracket Expressions can be used to match a group of characters. It is used multiple times in our regex for matching a URL. In `[\da-z\.-]`, we are saying that we expect to see digits, letters, dots, or hyphens. In `[a-z\.]`, we are saying that we expect to see letters and dots. In `[\/\w \.-]`, we are saying that we expect to see letters, numbers, slashes, hyphens, or dots.
+```
+Bracket Expressions:[\da-z\.-], [a-z\.], [\/\w \.-].
+```
+
 ### Character Classes
 
 ### Character Escapes
